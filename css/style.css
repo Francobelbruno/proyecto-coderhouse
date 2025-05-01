@@ -174,3 +174,10 @@ main {
       text-align: center;
     }
   }
+
+/* Estilos para la seccion de Videos */
+
+.carousel-item iframe {
+    width: 100%;
+    height: 500px;
+  }

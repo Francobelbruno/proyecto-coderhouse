@@ -46,20 +46,31 @@
 
     <main>
         <h1>VIDEOS</h1>
-        <div class="productos">
-            <section class="video1">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_1" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-                <p class="textoprincipal">Descripción del video 1.</p>
-            </section>
-            <section class="video2">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_2" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-                <p class="textoprincipal">Descripción del video 2.</p>
-            </section>
-            <section class="video3">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_1" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-                <p class="textoprincipal">Descripción del video 1.</p>
-            </section>
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <iframe src="https://www.youtube.com/watch?v=c1ruWE0dY1M&ab_channel=Rockie" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="carousel-item">
+              <iframe src="https://www.youtube.com/watch?v=aNXvPM8_l9E" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="carousel-item">
+              <iframe src="https://www.youtube.com/watch?v=aNXvPM8_l9E" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        
     </main>
+
+
 
     <footer class="bg-dark text-white py-4">
       <div class="container">
