@@ -1,0 +1,67 @@
+@import "variables";
+
+body{
+    background-color: $primary-color;
+    font-family: $font-family;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1{
+    color: $secondary-color;
+    font-size: 6vw;
+    font-family: $font-family;
+    text-align: center;
+}
+
+
+main {
+    padding-bottom: 60px;
+}
+
+%input-base {
+  display: flex;
+  justify-content: center;
+  width: 99%;
+  padding: 12px;
+  margin: 1rem 0.5% 1rem 1rem;
+  border: 2px solid #000000;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+.social-icon {
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.5);
+    color: $secondary-color;
+  }
+}
+
+.navbar-brand {
+  img {
+    height: 50px;
+    width: auto;
+    margin-right: 12px;
+  }
+}
+
+.navbar {
+  background-color: $color-navbar; 
+}
+
+.nav-link{
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.5);
+    color: $secondary-color;
+  }
+}
+
+footer{
+  background-color: $tercer-color;
+}
+

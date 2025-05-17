@@ -1,31 +1,30 @@
-/* Estilos para el pagina principal */
+// Estilos para la página principal
 
-.conteiner-principal {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-    background-color: #2e0d78;
+.container-principal {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 20px;
 }
 
 .item {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-    color: white;
-}
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  color: white;
 
-.item img {
+  img {
     width: 40%;
     height: 50%;
     margin: 5px;
     border-radius: 10px;
     border: 2px solid black;
-}
+  }
 
-.item p {
-    font-size: 16px;
-    max-width: 600px;
+  p {
+    font-size: 3vb;
+    max-width: 800px;
     text-align: justify;
+  }
 }

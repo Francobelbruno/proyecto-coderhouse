@@ -1,35 +1,28 @@
-/* Estilos para la seccion de Contacto */
-.formusuario label {
+@import '../otros/mixins';
+@import '../otros/comunes';
+
+.formusuario {
+  label {
     display: flex;
     flex-direction: column;
     margin-left: 1rem;
     color: white;
     font-size: 20px;
     margin-bottom: 10px;
-}
+  }
 
-.formusuario input, .formusuario textarea {
-    display: flex;
-    justify-content: center;
-    width: 99%;
-    padding: 12px;
-    margin: 1rem 0.5% 1rem 1rem;
-    border: 2px solid #000000;
-    border-radius: 2px;
-    box-sizing: border-box;
-}
+  input,
+  textarea {
+    @extend %input-base;
+  }
 
-.formusuario button {
-    background-color: #120639;
-    color: white;
-    padding: 10px 20px;
+  button {
+    @include boton-estilo;
     margin-left: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
 
-.formusuario button:hover {
-    background-color: #010003;
+    &:hover {
+      background-color: #010003;
+    }
+  }
 }
 
