@@ -4,36 +4,56 @@
   }
 
   .item {
+    display: flex;
     flex-direction: column;
+    gap: 10px;
     text-align: center;
 
     img {
       width: 90%;
       height: auto;
     }
+
+    p {
+      font-size: 1.1rem;
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+
+  .nav-link {
+    &:hover {
+      transform: none;
+      color: inherit;
+    }
+    font-size: 1.1rem;
+    padding: 1rem;
   }
 
   .formusuario {
-    label {
-      margin-left: 0;
-      font-size: 18px;
-      text-align: center;
-    }
+    padding: 1rem;
 
     input,
     textarea {
-      width: 95%;
-      margin: 1rem auto;
+      width: 100%;
+      font-size: 1.1rem;
+      margin: 10px 0;
+      padding: 12px;
+      box-sizing: border-box;
+      border-radius: 5px;
     }
 
     button {
-      margin-left: 0;
-      display: block;
-      margin: 1rem auto;
+      width: 100%;
+      margin: 10px 0;
+      font-size: 1.1rem;
+      padding: 12px;
+      border-radius: 5px;
     }
   }
 
   .portfolio-container {
+    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -46,6 +66,7 @@
   }
 
   .productos {
+    display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -59,14 +80,67 @@
     padding: 10px;
   }
 
+  .formusuario {
+    input,
+    textarea {
+      font-size: 1rem;
+      padding: 10px;
+    }
+
+    button {
+      font-size: 1rem;
+      padding: 10px;
+    }
+  }
+
   .productos {
     grid-template-columns: 1fr;
   }
 }
 
-img,
-iframe {
-  max-width: 100%;
-  height: auto;
-  display: block;
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .formusuario {
+    padding: 2rem;
+
+    input,
+    textarea {
+      width: 100%;
+      font-size: 1.2rem;
+      padding: 14px;
+      margin: 12px 0;
+      box-sizing: border-box;
+      border-radius: 6px;
+    }
+
+    button {
+      width: 100%;
+      font-size: 1.2rem;
+      padding: 14px;
+      margin-top: 1rem;
+      border-radius: 6px;
+    }
+  }
+
+  h1 {
+    font-size: 5vw;
+    text-align: center;
+  }
+
+  .productos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .portfolio-container {
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  main {
+    padding: 2rem;
+  }
 }

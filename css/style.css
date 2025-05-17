@@ -3,29 +3,49 @@
     font-size: 8vw;
   }
   .item {
+    display: flex;
     flex-direction: column;
+    gap: 10px;
     text-align: center;
   }
   .item img {
     width: 90%;
     height: auto;
   }
-  .formusuario label {
-    margin-left: 0;
-    font-size: 18px;
+  .item p {
+    font-size: 1.1rem;
+    max-width: 100%;
     text-align: center;
+  }
+  .nav-link {
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+  .nav-link:hover {
+    transform: none;
+    color: inherit;
+  }
+  .formusuario {
+    padding: 1rem;
   }
   .formusuario input,
   .formusuario textarea {
-    width: 95%;
-    margin: 1rem auto;
+    width: 100%;
+    font-size: 1.1rem;
+    margin: 10px 0;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 5px;
   }
   .formusuario button {
-    margin-left: 0;
-    display: block;
-    margin: 1rem auto;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 1.1rem;
+    padding: 12px;
+    border-radius: 5px;
   }
   .portfolio-container {
+    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -34,6 +54,7 @@
     text-align: center;
   }
   .productos {
+    display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -44,17 +65,57 @@
   main {
     padding: 10px;
   }
+  .formusuario input,
+  .formusuario textarea {
+    font-size: 1rem;
+    padding: 10px;
+  }
+  .formusuario button {
+    font-size: 1rem;
+    padding: 10px;
+  }
   .productos {
     grid-template-columns: 1fr;
   }
 }
-img,
-iframe {
-  max-width: 100%;
-  height: auto;
-  display: block;
+@media (min-width: 769px) and (max-width: 1024px) {
+  .formusuario {
+    padding: 2rem;
+  }
+  .formusuario input,
+  .formusuario textarea {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 14px;
+    margin: 12px 0;
+    box-sizing: border-box;
+    border-radius: 6px;
+  }
+  .formusuario button {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 14px;
+    margin-top: 1rem;
+    border-radius: 6px;
+  }
+  h1 {
+    font-size: 5vw;
+    text-align: center;
+  }
+  .productos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .portfolio-container {
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  main {
+    padding: 2rem;
+  }
 }
-
 body {
   background-color: #59004b;
   font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS", sans-serif;
@@ -77,7 +138,7 @@ main {
 .formusuario textarea {
   display: flex;
   justify-content: center;
-  width: 99%;
+  width: 98%;
   padding: 12px;
   margin: 1rem 0.5% 1rem 1rem;
   border: 2px solid #000000;
@@ -105,6 +166,9 @@ main {
 
 .nav-link {
   transition: transform 0.3s ease;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  font-size: 1rem;
 }
 .nav-link:hover {
   transform: scale(1.5);
@@ -113,6 +177,13 @@ main {
 
 footer {
   background-color: #1e5900;
+}
+
+img,
+iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 /*PAGINAS*/
@@ -172,7 +243,7 @@ footer {
   border: 2px solid black;
 }
 .item p {
-  font-size: 3vb;
+  font-size: 1vw;
   max-width: 800px;
   text-align: justify;
 }
@@ -238,7 +309,7 @@ main {
 .formusuario textarea {
   display: flex;
   justify-content: center;
-  width: 99%;
+  width: 98%;
   padding: 12px;
   margin: 1rem 0.5% 1rem 1rem;
   border: 2px solid #000000;
@@ -266,6 +337,9 @@ main {
 
 .nav-link {
   transition: transform 0.3s ease;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  font-size: 1rem;
 }
 .nav-link:hover {
   transform: scale(1.5);
@@ -276,12 +350,23 @@ footer {
   background-color: #1e5900;
 }
 
+img,
+iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.formusuario {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+}
 .formusuario label {
   display: flex;
   flex-direction: column;
-  margin-left: 1rem;
   color: white;
-  font-size: 20px;
+  font-size: 1.2rem;
   margin-bottom: 10px;
 }
 .formusuario button {
@@ -291,7 +376,7 @@ footer {
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
-  margin-left: 1rem;
+  margin-top: 1rem;
 }
 .formusuario button:hover {
   background-color: #010003;
