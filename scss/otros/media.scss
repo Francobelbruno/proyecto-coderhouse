@@ -1,23 +1,29 @@
-@media (max-width: 768px) {
+@media (max-width: 768px) {  
   h1 {
     font-size: 8vw;
   }
 
-  .item {
+  .container-principal {
     display: flex;
     flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .item {
+    flex-direction: column;
+    align-items: center;
     gap: 10px;
-    text-align: center;
 
     img {
-      width: 90%;
-      height: auto;
+      width: 100%;
     }
 
-    p {
+    .textoindex {
       font-size: 1.1rem;
       max-width: 100%;
       text-align: center;
+      margin-top: 10px;
     }
   }
 
